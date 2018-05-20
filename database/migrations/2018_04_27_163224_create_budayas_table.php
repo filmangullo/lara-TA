@@ -14,9 +14,9 @@ class CreateBudayasTable extends Migration
     public function up()
     {
         Schema::create('budayas', function (Blueprint $table) {
-            $table->increments('budaya_Id');
-            $table->string('budaya_Img', 50);
-            $table->string('budaya_Lokasi', 100);
+            $table->increments('id');
+            $table->string('budaya_img', 50);
+            $table->string('budaya_lokasi', 100);
             $table->timestamps();
         });
     }

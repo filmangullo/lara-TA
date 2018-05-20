@@ -26,7 +26,7 @@
         <header class="section-header" style="">
           <h4>Kebudayaan Pulau Nias </h4>
         </header>
-        @foreach ($artikel->budayas as $budaya)
+        @foreach ($artikels->budayas as $budaya)
         <div class="row about-cols">
 
           <div class="col-md-4 wow fadeInUp">

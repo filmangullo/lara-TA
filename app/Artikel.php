@@ -9,6 +9,7 @@ class Artikel extends Model
     protected $table = 'artikels';
 
     protected $fillable = [
+      'artikel_id', 'artikel_title', 'artikel_content'
 
     ];
 
@@ -17,7 +18,3 @@ class Artikel extends Model
       return $this->belongsTo('App\Budaya');
     }
 }
-
-$budaya = Budaya::first();
-
-$budaya->artikels;

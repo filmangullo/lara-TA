@@ -9,6 +9,7 @@ class Budaya extends Model
     protected $table = 'budayas';
 
     protected $fillable = [
+      'budaya_img', 'budaya_lokasi'
     ];
 
     public function artikel()
@@ -17,6 +18,6 @@ class Budaya extends Model
     }
 }
 
-$artikel = Artikel::first();
+$artikels = Artikel::first();
 
-$artikel->budayas;
+$artikels->budayas;

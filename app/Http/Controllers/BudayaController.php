@@ -16,9 +16,9 @@ class BudayaController extends Controller
      */
     public function index()
     {
-      $artikel = Artikel::first();
+      $artikels = Artikel::first();
 
-      return view('budaya',['artikel' => $artikel]);
+      return view('budaya',['artikels' => $artikels]);
     }
 
     /**

@@ -15,10 +15,10 @@ class CreateArtikelsTable extends Migration
     {
         Schema::create('artikels', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('artikel_Id')->unsigned();
-            $table->foreign('artikel_Id')->references('budaya_Id')->on('budayas');
-            $table->string('artikel_Title', 100);
-            $table->text('artikel_Content');
+            $table->integer('artikel_id')->unsigned();
+            $table->foreign('artikel_id')->references('id')->on('budayas');
+            $table->string('artikel_title', 100);
+            $table->text('artikel_content');
             $table->timestamps();
         });
     }
